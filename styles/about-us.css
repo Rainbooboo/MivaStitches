@@ -1,0 +1,211 @@
+.hero2 {
+    overflow: hidden;
+    background-image: url(/public/contact-hero.jpeg);
+    background-size: cover;
+    height: 659px;
+    font-family: "Playfair Display";
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-left: 171px;
+    padding-right: 171px;
+    text-align: center;
+  }
+  
+  .timeless-and-chic-con {
+      font-size: inherit;
+      letter-spacing: -0.02em;
+      color:#FFFFFF;
+      font-family: inherit;
+      font-size: 24px;
+      font-weight: 500;
+      font-family: Montserrat;
+      line-height: 24px;
+  }
+
+  .mb-30{
+      margin-bottom: 30px;
+  }
+  
+  .event-section {
+      padding-top: 35px;
+      padding-bottom: 35px;
+      font-family: Montserrat;
+  }
+  
+  .event-title {
+      padding-left: 35px;
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 25px;
+  }
+  
+  .main-event {
+      overflow: hidden;
+      white-space: nowrap;
+  }
+  
+  .marquee {
+      animation: scroll 10000ms linear infinite;
+      display: flex;
+  }
+  
+  .event-rows {
+      display: flex;
+      align-items: center;
+      margin-right: 57px; 
+  }
+  
+  .event-text {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: -0.02em;
+      color: #333333;
+      white-space: nowrap;
+      margin-left: 10px;
+  }
+  
+  @keyframes scroll {
+      0% {
+          transform: translateX(0%);
+      }
+      100% {
+          transform: translateX(-100%);
+      }
+  }
+
+  .about-us{
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 160px;
+  }
+  .text-1{
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #000000;
+  }
+  .text-2{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+  }
+  .about-us-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.3rem;
+    column-gap: 2rem;
+    width: 50%;
+  }
+
+  .about-main{
+    width: 50%;
+  }
+  .values{
+    padding-top: 6.7rem;
+  }
+  .team-img{
+    width: 50%; 
+  }
+.team-members-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3rem;
+    column-gap: 2rem;
+    width: 100%;
+  }
+  .bot-text{
+    font-family: Playfair Display;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    text-align: center;
+
+  }
+  .bot-text2{
+    font-family: Jannon Text;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    text-align: center;
+
+  }
+
+  .team-members-img img{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+  }
+  .fw-600{
+    font-weight: 600 !important;
+  }
+
+/* Keyframes for spinning the image */
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+/* Base styling for the image */
+.spin-img {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Spin effect on mouse enter */
+.spin-img:hover {
+    animation: spin 0.6s forwards; /* Apply the spin animation for 0.6s */
+}
+
+  
+@media screen and (max-width: 680px) {
+    .hero2 {
+        height: 400px
+      }
+    .hero2{
+        padding-left: 71px;
+        padding-right: 71px;
+    }
+    .about-us{
+      padding-left: 40px !important;
+      padding-right: 40px !important;
+      padding-top: 50px !important;
+    }
+    .contact-img{
+        width: 100% !important;
+    }
+    .about-main{
+      width: 100% !important;
+    }
+    .about-us-img{
+      width: 100% !important;
+    }
+    .values{
+      padding-top: 1rem !important;
+    }
+    .mission{
+      padding-top: 1.5rem !important;
+    }
+    .team-members-img{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 3rem;
+      column-gap: 2rem;
+      width: 100%;
+    }    
+}

@@ -1,0 +1,263 @@
+.grey-col {
+  color: #333333b2;
+}
+.fs-16{
+    font-size: 16px !important;
+}
+.font-inter{
+    font-family: inter;
+}
+.appointment2 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Montserrat;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #333333;
+}
+.main-stepper {
+  margin: auto 77px;
+}
+
+
+.step {
+    margin-left: 15px !important;
+}
+.stepper {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+.stepper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  width: 4px;
+  background-color: #d0d5dd85;
+}
+.step-number {
+  width: 30px;
+  height: 30px;
+  background-color: #e9ecef;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2.8px;
+}
+.child-step-no {
+  color: black;
+  background-color: #ffff;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8.57px;
+  font-weight: 500;
+}
+/* .stepper .step-number.active {
+  background-color: #007bff;
+  color: white;
+} */
+.custom-select{
+    border-color: #dee2e6;
+}
+.step-title{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333CC;
+}
+label{
+    font-size: 14px;
+    font-weight: 500;
+    font-family:inter;
+    color: #474747;
+}
+input::placeholder, select, input, textarea::placeholder{
+    font-size: 16px !important;
+    color:#707070 !important;
+    font-family: inter !important;
+}
+/* select image section */
+/* Image dropzone style */
+.custom-dropzone {
+    border: 2px dashed #EAECF0;
+    padding: 10px 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 128px;
+    max-height: 98px;
+    border-radius: 12px;
+    text-align: center;
+    color: #6c757d;
+    background: #fafafa;
+    text-align: center;
+    cursor: pointer;
+  }
+  .custom-dropzone:hover{
+    border: 2px dashed #9747ff;
+  }
+  .custom-dropzone-input {
+    display: none;
+  }
+  .file-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+  }
+  .dropzone-text{
+    padding-top: 30px;
+    cursor: pointer;
+  }
+  .hide{
+    display: none;
+  }
+  .custom-dropzone-preview {
+    position: relative;
+  }
+  .custom-dropzone-preview img {
+    border-radius: 5px;
+    width: auto;
+    height: 100px
+  }
+  .custom-dropzone-remove {
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    color: white;
+    background-color: #737373;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1px 7px;
+    font-size: 12px;
+  }
+  .custom-dropzone-overlay {
+    /* adds an overlay where the delete button will be displayed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .custom-dropzone-preview:hover .custom-dropzone-overlay {
+    /* displays delete button on hover */
+    opacity: 1; 
+  }
+
+  .form-info-text{
+    color: #5C5C5C;
+    font-size: 14px;
+    font-family: inter;
+  }
+  a{
+    text-decoration: none !important;
+  }
+
+  .btn-primary{
+    background: #F2F2D3;
+    color: black;
+  }
+  .btn-outline-secondary:hover,  .btn-outline-secondary:active, .btn-primary{
+    background: #F2F2D3 !important;
+    color: black !important;
+    border-color: #F2F2D3 !important;
+  }
+  .btn-primary{
+    font-weight: 700 !important;
+    padding: 10px 18px !important;
+  }
+  .btn-ash{
+    background-color: #FCFCFD;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #333333;
+  }
+
+  
+
+  /* Appointment success  */
+  .appointment-title1{
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  }
+  .card{
+    border: none !important;
+    box-shadow: 0px 1px 4px 0px #0C0C0D0D;
+    width: calc(100vw - 50vw);
+  }
+  .text1{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  }
+  
+  .grey{
+    color: #333333B2;
+  }
+  .grey2{
+    color:#333333;
+  }
+  .info{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+  }
+.material-symbols-outlined {
+  
+  align-items: center;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 0
+}
+
+  @media screen and (max-width: 700px) {
+    .main-stepper {
+        margin: auto 40px;
+      }
+      .card{
+        border: none !important;
+        box-shadow: 0px 1px 4px 0px #0C0C0D0D;
+        width: calc(100vw - 20vw);
+      }
+  }
+  @media screen and (max-width: 900px) {
+    .main-stepper {
+        margin: auto 40px;
+      }
+      .card{
+        border: none !important;
+        box-shadow: 0px 1px 4px 0px #0C0C0D0D;
+        width: calc(100vw - 30vw);
+      }
+  }

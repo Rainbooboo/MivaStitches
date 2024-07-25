@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            padding: 20px;
+            /* border-top: 1px solid #e0e0e0; */
+        }
+        .newsletter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-top: 70px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .newsletter h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .newsletter p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .newsletter-form {
+            display: flex;
+        }
+        .newsletter-form input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            width: 200px;
+        }
+        .newsletter-form button {
+            padding: 10px 15px;
+            margin-left: 10px;
+            background-color: #eee5b4;
+            border: 1px solid #ccc;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .company-info {
+            flex: 1;
+            padding: 10px;
+        }
+        .company-info h3 {
+            margin:10px;
+            font-size: 24px;
+        }
+        .company-info p {
+            margin: 10px;
+            font-size: 14px;
+        }
+        .footer-links {
+            display: flex;
+            flex: 0.5;
+            justify-content: space-evenly;
+        }
+        .footer-links ul {
+            list-style: none;
+            padding: 10px;
+            margin: 10px;
+        }
+        .footer-links li {
+            margin-bottom: 5px;
+        }
+        .footer-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+        .footer-bottom {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #666;
+        }
+        .footer-bottom a {
+            color: #666;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="newsletter">
+            <div>
+                <h2>Join our newsletter</h2>
+                <p>Shop with us and discover your style</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-content">
+            <div class="company-info">
+                <h3>MIVA En Vogue</h3>
+                <p>Lekki,Nigeria</p>
+                <p>+234 806 859 2750</p>
+                <p>contact@Miva.co</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="/about-us.html">About Us</a></li>
+                    <li><a href="/contact-us.html">Contact Us</a></li>
+                    <li><a href="#">Gmail</a></li>
+                    <li><a href="#">Medium</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Gmail</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2024 miva.co All rights reserved.</span>
+            <div>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

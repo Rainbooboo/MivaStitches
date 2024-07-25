@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>Appointment Confirmation</title>
+
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./styles/appointment.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair Display:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=GFS Didot:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="">
+        <!-- header section -->
+        <section class="hero-parent">
+            <div class="hero">
+                <div class="component-4">
+                    <a class="new-designs-daily-container">
+                        <p class="new-designs-daily">New designs daily.</p>
+                        <p class="free-shipping-worldwide">Free shipping worldwide</p>
+                    </a>
+                </div>
+            </div>
+            <header class="navigation">
+                <div class="menu">
+                    <div class="appointment">
+                        <div class="country-parent">
+                            <div class="country">
+                                <img class="chevron-down-icon" loading="lazy" alt="" src="./public/chevrondown@2x.png"
+                                    id="chevronDownIcon" />
+
+                                <div class="nigeria">
+                                    <a class="nigeria1" href="">Nigeria</a>
+                                </div>
+                            </div>
+                            <div class="book-appointment-wrapper">
+                                <a class="book-appointment grey-col" href="appointment.html">Book appointment</a>
+                            </div>
+                            <div class="our-outlets-wrapper">
+                                <a class="our-outlets" href="">Our Outlets</a>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <div class="action-buttons">
+                                <a class="shop-now" href="">Shop Now</a>
+                            </div>
+                            <div class="action-buttons1">
+                                <div class="icons-wrapper">
+                                    <img class="icons" loading="lazy" alt="" src="./public/vector@2x.png" />
+                                </div>
+                                <a class="favorites" href="">Favorites</a>
+                            </div>
+                            <div class="action-buttons2">
+                                <div class="briefcase-wrapper">
+                                    <img class="briefcase-icon" loading="lazy" alt="" src="./public/briefcase@2x.png" />
+                                </div>
+                                <a class="cart" href="">Cart</a>
+                            </div>
+                            <div class="action-buttons3">
+                                <a class="sign-in" href="">Sign in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="miva" id="mIVAText" href="/index.html">MIVA</a>
+            </header>
+        </section>
+        <!-- header section ends -->
+        <section class="mt-5">
+            <div class="m-auto card">
+               <div class="card-body px-5">
+                  <div class="title-div my-4">
+                     <p class="appointment2 text-center">Appointment Update</p>
+                  </div>
+                  <div class="grey2">
+                     <p class="text1">Hello <span id="userName">User</span>!</p>
+                     <p class="text1">Here’s your appointment details</p>
+                  </div>
+                  <hr style="color: #f3f3f3;">
+                  <div class="d-flex justify-content-between text1 grey">
+                     <div>
+                        <p>Appointment date</p>
+                        <p>Appointment time</p>
+                     </div>
+                     <div class="text-end">
+                        <p id="preferredDate">07/15/2024</p>
+                        <p id="preferredTime">02:30PM</p>
+                     </div>
+                  </div>
+                  <p class="text1 grey2 my-3" style="font-weight: 500;">Alternate date</p>
+                  <div class="d-flex justify-content-between text1 grey">
+                     <div>
+                        <p>Appointment date</p>
+                        <p>Appointment time</p>
+                     </div>
+                     <div class="text-end">
+                        <p id="alternateDate">07/15/2024</p>
+                        <p id="alternateTime">02:30PM</p>
+                     </div>
+                  </div>
+                  <hr style="color: #f3f3f3;">
+                  <div class="mt-4">
+                     <p class="info grey2">Full appointment details have been sent to your mail. Other information will be communicated via mail.</p>
+                     <p class="text1 grey">Thank you!</p>
+                  </div>
+                  <div class="mt-5">
+                     <div class="btn btn-primary" onclick="closeWindow()">Close</div>
+                     <div class="btn btn-ash float-end my-auto">Download <i class="fas fa-download"></i></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+    </div>
+    <script>
+        // Retrieve saved data from localStorage
+        const formData = JSON.parse(localStorage.getItem('formData'));
+  
+        if (formData) {
+           // Populate the success UI with the gotten data
+           document.getElementById('userName').innerText = formData.firstName + " " + formData.lastName;
+           document.getElementById('preferredDate').innerText = formData.preferredDate;
+           document.getElementById('preferredTime').innerText = formData.preferredTime;
+           document.getElementById('alternateDate').innerText = formData.alternateDate;
+           document.getElementById('alternateTime').innerText = formData.alternateTime;
+        }else {
+            console.error("No form data found in localStorage.");
+        }
+  
+        function closeWindow() {
+            window.location.href = 'index.html';
+        }
+     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

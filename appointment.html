@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./styles/appointment.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair Display:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=GFS Didot:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="">
+        <!-- header section -->
+        <section class="hero-parent">
+            <div class="hero">
+                <div class="component-4">
+                    <a class="new-designs-daily-container">
+                        <p class="new-designs-daily">New designs daily.</p>
+                        <p class="free-shipping-worldwide">Free shipping worldwide</p>
+                    </a>
+                </div>
+            </div>
+            <header class="navigation">
+                <div class="menu">
+                    <div class="appointment">
+                        <div class="country-parent">
+                            <div class="country">
+                                <img class="chevron-down-icon" loading="lazy" alt="" src="./public/chevrondown@2x.png"
+                                    id="chevronDownIcon" />
+
+                                <div class="nigeria">
+                                    <a class="nigeria1" href="">Nigeria</a>
+                                </div>
+                            </div>
+                            <div class="book-appointment-wrapper">
+                                <a class="book-appointment grey-col" href="appointment.html">Book appointment</a>
+                            </div>
+                            <div class="our-outlets-wrapper">
+                                <a class="our-outlets" href="events/">Events</a>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <div class="action-buttons">
+                                <a class="shop-now" href="product/">Shop Now</a>
+                            </div>
+                            <div class="action-buttons1">
+                                <div class="icons-wrapper">
+                                    <img class="icons" loading="lazy" alt="" src="./public/vector@2x.png" />
+                                </div>
+                                <a class="favorites" href="">Favorites</a>
+                            </div>
+                            <div class="action-buttons2">
+                                <div class="briefcase-wrapper">
+                                    <img class="briefcase-icon" loading="lazy" alt="" src="./public/briefcase@2x.png" />
+                                </div>
+                                <a class="cart" href="">Cart</a>
+                            </div>
+                            <div class="action-buttons3">
+                                <a class="sign-in" href="">Sign in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="miva" id="mIVAText" href="/index.html">MIVA En Vogue</a>
+            </header>
+        </section>
+        <!-- header section ends -->
+        <section class="mt-5">
+            <div class=" title-div">
+                <p class="appointment2 text-center">Book an appointment</p>
+            </div>
+            <div class="main-stepper ">
+                <form id="appointmentForm">
+                    <!-- First Step Starts here - customer info -->
+                    <div class="">
+                        <div class="d-flex gap-4">
+                            <div class="step-number active ">
+                                <div class="child-step-no">1</div>
+                            </div>
+                            <h5 class="step-title my-auto">Customer Information</h5>
+                        </div>
+                        <div class="stepper pt-4">
+                            <div id="step1" class="step active">
+                                <div class="form-section">
+                                    <div class="row ">
+                                        <div class="form-group col-md-6 mb-4">
+                                            <label for="firstName" class="mb-2">First name</label>
+                                            <input type="text" class="form-control form-control-lg" id="firstName" placeholder="First name">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="lastName" class="mb-2">Last name</label>
+                                            <input type="text" class="form-control form-control-lg" id="lastName" placeholder="Last name">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-6 mb-4">
+                                            <label for="email" class="mb-2">Email</label>
+                                            <input type="email" class="form-control form-control-lg" id="email" placeholder="you@company.com">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="email" class="mb-2">Phone number</label>
+                                            <div class="input-group">
+                                                <select class="custom-select form-control-lg" id="countryCode">
+                                                    <option value="NG">NG</option>
+                                                    <option value="NG">NG</option>
+                                                    <option value="NG">NG</option>
+                                                    <option value="NG">NG</option>
+                                                    <option value="NG">NG</option>
+                                                </select>
+                                                <input type="text" class="form-control form-control-lg" placeholder="+234 123456789" aria-label="Username" aria-describedby="basic-addon1" id="phone">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second step starts here -appointment details -->
+                    <div class=" mt-5">
+                        <div class="d-flex gap-4">
+                            <div class="step-number active ">
+                                <div class="child-step-no">2</div>
+                            </div>
+                            <h5 class="step-title my-auto">Appointment Details</h5>
+                        </div>
+                        <div class="stepper pt-4">
+                            <div id="step2" class="step">
+                                <div class="form-section col-md-6">
+                                    <div class="row">
+                                        <div class="form-group col-md-6 mb-4">
+                                            <label for="preferredDate" class="mb-2">Preferred appointment date</label>
+                                            <input type="date" class="form-control form-control-lg" id="preferredDate" value="2024-06-07">
+                                        </div>
+                                        <div class="form-group col-md-6 mb-4">
+                                            <label for="preferredTime" class="mb-2">Preferred appointment time</label>
+                                            <input type="time" class="form-control form-control-lg" id="preferredTime" value="11:00">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-6 mb-4">
+                                            <label for="alternateDate" class="mb-2">Alternate appointment date</label>
+                                            <input type="date" class="form-control form-control-lg" id="alternateDate" value="2024-06-08">
+                                        </div>
+                                        <div class="form-group col-md-6 mb-4">
+                                            <label for="alternateTime" class="mb-2">Alternate appointment time</label>
+                                            <input type="time" class="form-control form-control-lg" id="alternateTime" value="11:00">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="location" class="mb-2">Appointment location</label>
+                                        <select class="form-select form-control-lg select" aria-label="Default select example" id="location">
+                                            <option selected>Select</option>
+                                            <option value="1">Ajah</option>
+                                            <option value="2">Ibeju lekki</option>
+                                            <option value="3">Lekki Phase 1</option>
+                                            <option value="3">Lekki Phase 2</option>
+                                            <option value="3">VI</option>
+                                            <option value="3">Ikoyi</option>
+                                            <option value="3">Ikeja</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third step starts here - order details-->
+                    <div class=" mt-5">
+                        <div class="d-flex gap-4">
+                            <div class="step-number active ">
+                                <div class="child-step-no">3</div>
+                            </div>
+                            <h5 class="step-title my-auto">Order Details</h5>
+                        </div>
+                        <div class="stepper pt-4">
+                            <div id="step2" class="step">
+                                <div class="form-section">
+                                    <div class="form-group mb-4">
+                                        <label for="location" class="mb-2">Type of custom order</label>
+                                        <select class="form-select form-control-lg select" aria-label="Select" id="orderType">
+                                            <option selected>Select</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="stylePreferences mb-3">Style preferences</label>
+                                    </div>
+                                    <!-- Add images -->
+                                    <div class="form-group mb-4">
+                                        <label for="fileUpload" class="mb-3 fs-16">Attachments</label>
+                                        <div class="custom-dropzone mb-3" onclick="document.getElementById('fileInput').click()">
+                                            <input type="file" id="fileInput" multiple class="custom-dropzone-input">
+                                            <span class="dropzone-text my-auto" id="dropzone-text"> <span style="color: #800020; font-weight: 600;" onMouseOut="this.style.color='#800020'" onMouseOver="this.style.color='#9747ff'">Click to upload</span> or drag and drop project files</span>
+                                            <div id="filePreview" class="file-preview"></div>
+                                          </div>
+                                        <small class="form-info-text ">You may attach up to 5 files under the size of 25 MB each. Include work samples or other documents to better understand your preference. </small>
+                                    </div>
+                                    <!-- Extra info -->
+                                    <div class="form-group mb-4">
+                                        <label for="additionalNote" class="mb-2">Additional note</label>
+                                        <textarea class="form-control" id="additionalNote" rows="6" placeholder="Write a message"></textarea>
+                                    </div>
+                                    <div class="form-group mb-5">
+                                        <label for="measurements" class="fs-16 mb-2">Measurements (<span class="" style="color: #7D89B0">Optional</span>)  <a href="#" class="text-primary" onclick="clearField();">Clear field</a></label>
+                                       <!-- Select gender-->
+                                        <div class=" d-flex mt-2 gap-4" data-toggle="buttons">
+                                          <label class="btn btn-outline-secondary rounded-0">Woman </label>
+                                          <label class="btn btn-outline-secondary rounded-0">Man </label>
+                                          <label class="btn btn-outline-secondary rounded-0">Kids  </label>
+                                        </div>
+                                    </div>
+                                    <!-- Measurement Section -->
+                                    <!-- Dress Section -->
+                                    <div class="form-section col-md-11">
+                                        <div id="dressSection" class="d-md-flex gap-4 flex-row justify-content-between">
+                                            <div class="col-md-2 my-auto">
+                                                <label class="fs-16">Dress <a href="#" onclick="clearSection('dressSection');">Clear field</a></label>
+                                            </div>
+                                            <div class="form-group flex-fill mb-4">
+                                                <label for="dressLength" class="mb-2">Length</label>
+                                                <select class="form-select form-control-lg select" aria-label="Select">
+                                                    <option selected>Select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group flex-fill mb-4">
+                                                <label for="dressShoulder" class="mb-2">Shoulder</label>
+                                                <select class="form-select form-control-lg select" aria-label="Select">
+                                                    <option selected>Select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group flex-fill mb-4">
+                                                <label for="dressBust" class="mb-2">Bust</label>
+                                                <select class="form-select form-control-lg select" aria-label="Select">
+                                                    <option selected>Select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group flex-fill mb-4">
+                                                <label for="dressWaist" class="mb-2">Waist</label>
+                                                <select class="form-select form-control-lg select" aria-label="Select">
+                                                    <option selected>Select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group flex-fill mb-4">
+                                                <label for="dressHip" class="mb-2">Hip</label>
+                                                <select class="form-select form-control-lg select" aria-label="Select">
+                                                    <option selected>Select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Top Section -->
+                                    <div class="form-section col-md-11">
+                                        <div id="dressSection" class="d-md-flex gap-4 flex-grow">
+                                            <div class="col-md-2 my-auto">
+                                                <label class="fs-16">Top <a href="#" onclick="clearSection('dressSection');">Clear field</a></label>
+                                            </div>
+                                            <div class="form-group flex-fill mb-4">
+                                                <label for="dressLength" class="mb-2">Length</label>
+                                                <select class="form-select form-control-lg select" aria-label="Select">
+                                                    <option selected>Select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group flex-fill mb-4">
+                                                <label for="dressShoulder" class="mb-2">Shoulder</label>
+                                                <select class="form-select form-control-lg select" aria-label="Select">
+                                                    <option selected>Select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group flex-fill mb-4">
+                                                <label for="dressBust" class="mb-2">Bust</label>
+                                                <select class="form-select form-control-lg select" aria-label="Select">
+                                                    <option selected>Select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group flex-fill mb-4">
+                                                <label for="dressWaist" class="mb-2">Waist</label>
+                                                <select class="form-select form-control-lg select" aria-label="Select">
+                                                    <option selected>Select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Skirt Section -->
+                                    <div class="form-section col-md-11">
+                                        <div id="skirtSection" class="d-md-flex gap-4 flex-grow">
+                                            <div class="col-md-2 my-auto">
+                                                <label class="fs-16 ">Skirt <a href="#" onclick="clearSection('topSection');">Clear field</a></label>
+                                            </div>
+                                            <div class="form-group flex-fill mb-4">
+                                                <label for="skirtLength" class="mb-2">Length</label>
+                                                <select class="form-select form-control-lg select" aria-label="Select">
+                                                    <option selected>Select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group flex-fill mb-4">
+                                                <label for="skirtWaist" class="mb-2">Waist</label>
+                                                <select class="form-select form-control-lg select" aria-label="Select">
+                                                    <option selected>Select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group flex-fill mb-4">
+                                                <label for="skirtHip" class="mb-2">Hip</label>
+                                                <select class="form-select form-control-lg select" aria-label="Select">
+                                                    <option selected>Select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Pant Section -->
+                                    <div class="form-section col-md-11">
+                                        <div id="pantSection" class="d-md-flex gap-4 flex-grow">
+                                            <div class="col-md-2 my-auto">
+                                                <label class="fs-16 ">Pant <a href="#" onclick="clearSection('topSection');">Clear field</a></label>
+                                            </div>
+                                            <div class="form-group flex-fill mb-4">
+                                                <label for="pantLength" class="mb-2">Length</label>
+                                                <select class="form-select form-control-lg select" aria-label="Select">
+                                                    <option selected>Select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group flex-fill mb-4">
+                                                <label for="pantWaist" class="mb-2">Waist</label>
+                                                <select class="form-select form-control-lg select" aria-label="Select">
+                                                    <option selected>Select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group flex-fill mb-4">
+                                                <label for="pantUpperThigh" class="mb-2">Upper Thigh</label>
+                                                <select class="form-select form-control-lg select" aria-label="Select">
+                                                    <option selected>Select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group flex-fill mb-4">
+                                                <label for="pantLowerThigh" class="mb-2">Lower Thigh</label>
+                                                <select class="form-select form-control-lg select" aria-label="Select">
+                                                    <option selected>Select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Budget Section -->
+                                    <div class="form-section col-md-6">
+                                        <label for="budget" class="mb-2">Budget</label>
+                                        <select class="form-select form-control-lg select" aria-label="Select">
+                                            <option selected>Select</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Fourth step starts here -->
+                    <div class=" mt-5">
+                        <div class="d-flex gap-4">
+                            <div class="step-number active ">
+                                <div class="child-step-no">4</div>
+                            </div>
+                            <h5 class="step-title my-auto">Additional information</h5>
+                        </div>
+                        <div class="stepper pt-4">
+                            <div id="step2" class="step">
+                                <div class="form-section">
+                                    <div class="form-group">
+                                        <label for="preferredDate" class="mb-2">Preferred appointment date</label>
+                                        <textarea class="form-control" id="additionalNote" rows="6" placeholder="Write a message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Terms and condition -->
+                    <div class=" mb-5" style="margin-left:55px; margin-top: 58px">
+                        <h5 class="step-title my-auto mb-3">Confirmation</h5>
+                        <div class="form-check mb-5">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" style="border: 2px solid #D0D5DD; margin-right: 17px;">
+                            <label class="form-check-label" for="flexCheckIndeterminate" style="font-weight: 400;">I agree to the terms and conditions </label>
+                        </div>
+                        <div type="submit" class="btn btn-primary" onclick="submitForm()">Submit</div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+      <div id="footer-placeholder" style="width: 90%; margin-left: 5%; margin-right: 5%;"></div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/js/appointment.js" crossorigin="anonymous"></script>
+    <script>
+        function clearSection(sectionId) { //The clearSection() function is used to clear the selected options within each section.
+          const section = document.getElementById(sectionId);
+          const selects = section.getElementsByTagName('select');
+          for (let select of selects) {
+            select.selectedIndex = 0;
+          }
+        }
+
+        function loadFooter() {
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer-placeholder').innerHTML = data;
+        });
+    }
+    window.onload = loadFooter;
+    
+      </script>
+</body>
+
+</html>
